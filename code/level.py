@@ -82,7 +82,8 @@ class Level:
 									self.destroy_attack,
 									self.create_magic)
 							else:
-								monster_name = 'spirit'
+								if col == '391': monster_name = 'spirit'
+								else : monster_name ='raccoon'
 								Enemy(
 									monster_name,
 									(x,y),
